@@ -1,7 +1,39 @@
 body {
-   /* background-color: #fff; */
    background-color: #000;
    font-family: "Inter", sans-serif;
+   cursor: none;
+}
+a{
+   cursor: none;
+}
+/* body {
+   margin: 0;
+   height: 100vh;
+   overflow: hidden;
+   background-color: #f4f4f4;
+   cursor: none; 
+} */
+
+.cursor-shadow {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background: rgba(205, 199, 199, 0.7);
+   border-radius: 50%;
+   pointer-events: none;
+   transform: translate(-50%, -50%);
+   animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+   0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+   }
+   100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2);
+   }
 }
 
 .container {
