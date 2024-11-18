@@ -15,6 +15,9 @@ body {
    width: 100%;
    z-index: 1000;
 }
+#menu .container {
+   width: 96%;
+}
 .menu {
    display: flex;
    flex-direction: row;
@@ -98,7 +101,7 @@ body {
    background-color: #fff;
    height: 100%;
    position: absolute;
-   width: 43%;
+   width: 40%;
    float: right;
    top: 0;
    right: 0;
