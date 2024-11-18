@@ -23,6 +23,7 @@ a{
    pointer-events: none;
    transform: translate(-50%, -50%);
    animation: fadeOut 1s forwards;
+   z-index: 1001;
 }
 
 @keyframes fadeOut {
