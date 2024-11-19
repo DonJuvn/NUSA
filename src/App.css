@@ -274,7 +274,7 @@ a {
    flex-wrap: nowrap;
    scrollbar-width: none;
    gap: 30px;
-   padding: 20px 0;
+   padding: 20px;
 }
 #cases .cases .mobile img {
    width: 270px;
@@ -292,7 +292,7 @@ a {
    flex-wrap: nowrap;
    scrollbar-width: none;
    gap: 30px;
-   padding: 20px 0;
+   padding: 20px;
 }
 #cases .cases .web img {
    width: 750px;
@@ -301,4 +301,79 @@ a {
 }
 #cases .cases .web img:hover {
    transform: scale(1.02);
+}
+
+/* services */
+#services {
+   padding-top: 5%;
+}
+#under-title {
+   margin: 3% auto 8%;
+   font-size: 22px;
+   color: #e9e9e9;
+   width: 50%;
+   text-align: center;
+   line-height: 25px;
+   font-weight: 200;
+}
+#services .container {
+   width: 80%;
+   max-width: 80%;
+   overflow: hidden;
+}
+.services {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   gap: 1%;
+   margin-top: 3%;
+}
+.serives .column {
+   display: flex;
+   flex-direction: column;
+}
+.services #second {
+   margin-top: 3%;
+}
+.services #third {
+   margin-top: 6%;
+}
+.services .column .item {
+   width: 308px;
+   border: 1px solid transparent;
+   border-image: linear-gradient(to right, #ffffff30 30%, transparent 100%);
+   border-image-slice: 1;
+   padding: 30px 40px 30px;
+   min-height: 280px;
+   background-color: #25253299;
+   margin-bottom: 5%;
+   transition: 0.5s;
+}
+.services .column .item h4 {
+   font-family: "Courier New", sans-serif;
+   font-size: 28px;
+   font-weight: 200;
+}
+.services .column .item p {
+   font-weight: 200;
+}
+.services .column .item:hover {
+   border-image: linear-gradient(
+      to right,
+      #ffffff 20%,
+      #f96abb 60%,
+      #f1990c 100%
+   );
+   border-image-slice: 1;
+   transform: translateY(-10px);
+   background: linear-gradient(
+      to bottom,
+      #33334d90 20%,
+      #272737e0 60%,
+      rgb(51, 51, 77) 100%
+   );
+}
+.services .column .item h4,
+p {
+   color: #e9e9e9;
 }

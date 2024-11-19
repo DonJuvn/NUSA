@@ -4,6 +4,7 @@ import Menu from "./components/menu";
 import About from "./components/about";
 import Counters from "./components/counters";
 import Cases from "./components/cases";
+import Services from "./components/services";
 // import ShadowBox from "./components/shadow-box";
 // import MouseShadow from "./components/MouseShadow";
 
@@ -15,6 +16,7 @@ function App() {
          <About />
          <Counters />
          <Cases />
+         <Services />
          {/* <ShadowBox /> */}
       </div>
    );
