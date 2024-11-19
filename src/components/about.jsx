@@ -1,4 +1,5 @@
-import React from "react";const About = () => {
+import React from "react";
+const About = () => {
    return (
       <div id="about">
          <div className="container">
@@ -8,11 +9,11 @@ import React from "react";const About = () => {
                      Добро пожаловать в нашу цифровую лабораторию, где мы
                      превращаем ваши идеи в инновационные IT-продукты!
                   </h1>
-                  <a id='cta' href="#">
+                  <a id="cta" href="#">
                      Давайте начнем!
                      <img src="img/arrow-link.png" alt="" />
                   </a>
-                  <a id="arrow-down" href="#">
+                  <a id="arrow-down" href="#counters">
                      <img src="img/arrow-down.png" alt="" />
                   </a>
                </div>

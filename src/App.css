@@ -1,31 +1,32 @@
+html {
+   scroll-behavior: smooth;
+}
 body {
    background-color: #000;
    font-family: "Inter", sans-serif;
    /* cursor: none; */
-   scroll-behavior: smooth;
 }
 a {
    cursor: none;
 }
 /* For Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+   width: 12px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f0f0f0; /* Background of the scrollbar track */
+   background: #f0f0f0; /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #888; /* Color of the scrollbar thumb */
-    border-radius: 6px; /* Rounded edges of the thumb */
-    border: 3px solid #f0f0f0; /* Space around the thumb */
+   background-color: #888; /* Color of the scrollbar thumb */
+   border-radius: 6px; /* Rounded edges of the thumb */
+   border: 3px solid #f0f0f0; /* Space around the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Darker thumb on hover */
+   background-color: #555; /* Darker thumb on hover */
 }
-
 
 .cursor-shadow {
    position: absolute;
@@ -173,4 +174,82 @@ a {
 #arrow-down:hover {
    transform: scale(1.05);
    cursor: pointer;
+}
+
+/* stats */
+#counters {
+   margin-top: 6%;
+   height: 70vh;
+}
+#title {
+   border: 1px solid #e9e9e9;
+   padding: 5px 20px 7px;
+   width: fit-content;
+   margin: auto;
+   border-radius: 20px;
+   color: #e9e9e9;
+   font-size: 18px;
+   font-weight: 200;
+}
+#counters .container {
+   position: relative;
+}
+.counters {
+   display: flex;
+   flex-direction: row;
+   gap: 5%;
+   width: 100%;
+   justify-content: space-around;
+   margin-top: 4%;
+}
+.counters .item {
+   display: flex;
+   flex-direction: column;
+}
+.two {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   justify-content: start;
+}
+.counters .item img {
+   width: 100px;
+}
+.counters .item #stat {
+   color: #e9e9e9;
+   font-size: 70px;
+   font-weight: 400;
+   margin: 0;
+}
+.counters .item #stat-text {
+   color: #e9e9e9;
+   font-size: 26px;
+   font-weight: 300;
+   padding-left: 10px;
+}
+#counters .container #arrow-top {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 1;
+   border: 2px solid #e9e9e9;
+   border-radius: 35px;
+   padding: 20px;
+   transition: 0.3s;
+}
+#counters .container #arrow-top img {
+   transform: scaleY(-1);
+}
+#arrow-top:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+#about-us {
+   margin: 10% auto;
+   color: #e9e9e9;
+   width: 60%;
+   text-align: center;
+   font-weight: 400;
+   font-size: 28px;
 }
