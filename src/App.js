@@ -3,6 +3,7 @@ import "./App.css";
 import Menu from "./components/menu";
 import About from "./components/about";
 import Counters from "./components/counters";
+import Cases from "./components/cases";
 // import ShadowBox from "./components/shadow-box";
 // import MouseShadow from "./components/MouseShadow";
 
@@ -13,6 +14,7 @@ function App() {
          <Menu />
          <About />
          <Counters />
+         <Cases />
          {/* <ShadowBox /> */}
       </div>
    );
