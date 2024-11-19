@@ -3,15 +3,17 @@ import "./App.css";
 import Menu from "./components/menu";
 import About from "./components/about";
 import Counters from "./components/counters";
-import MouseShadow from "./components/MouseShadow";
+// import ShadowBox from "./components/shadow-box";
+// import MouseShadow from "./components/MouseShadow";
 
 function App() {
    return (
       <div className="App">
-         <MouseShadow />
+         {/* <MouseShadow /> */}
          <Menu />
          <About />
          <Counters />
+         {/* <ShadowBox /> */}
       </div>
    );
 }
