@@ -1,4 +1,4 @@
-import React from "react";const Feedbacks = ({ members }) => {
+import React from "react";const Feedbacks = ({ feedbacks }) => {
    const predefinedAngles = [90, 120, 180, 240, 270];
    const getRandomInRange = (min, max) => Math.random() * (max - min) + min;
 
@@ -10,7 +10,7 @@ import React from "react";const Feedbacks = ({ members }) => {
          {/* Orbits */}
          {[...Array(4)].map((_, orbitIndex) => {
             // Divide members among orbits evenly
-            const orbitMembers = members.filter(
+            const orbitMembers = feedbacks.filter(
                (_, idx) => idx % 4 === orbitIndex
             );
 

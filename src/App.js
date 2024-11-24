@@ -8,10 +8,11 @@ import Counters from "./components/counters";
 import Cases from "./components/cases";
 import Services from "./components/services";
 import Feedbacks from "./components/feedbacks";
+import Members from "./components/members";
 // import ShadowBox from "./components/shadow-box";
 // import MouseShadow from "./components/MouseShadow";
 
-const members = [
+const feedbacks = [
    { avatar: "img/avatar1.png", name: "Member 2" },
    { avatar: "img/avatar2.png", name: "Member 1" },
    { avatar: "img/avatar3.png", name: "Member 3" },
@@ -28,7 +29,8 @@ function App() {
          <Counters />
          <Cases />
          <Services />
-         <Feedbacks members={members} />
+         <Feedbacks feedbacks={feedbacks} />
+         <Members />
          {/* <ShadowBox /> */}
       </div>
    );
