@@ -467,30 +467,87 @@ p {
    width: 30%;
    aspect-ratio: 0.75;
 }
-.members .item img {
+.members .item #avatar {
    /* position: absolute; */
    width: 100%;
    height: 100%;
    z-index: 1;
+   display: flex;
 }
 .members .item .text {
    z-index: 5;
    display: flex;
    position: absolute;
-   bottom: 0;
+   flex-direction: column;
+   bottom: 30px;
+   width: 100%;
+   text-align: center;
+}
+.members .item .text #name {
+   font-size: 26px;
+   display: block;
+   margin: 0;
+   font-family: "Chakra Petch", sans-serif;
+   font-weight: 400;
+   color: #fff;
+}
+.members .item .text #post {
+   display: block;
+   margin: 0;
+   font-family: "Chakra Petch", sans-serif;
+   font-weight: 400;
+   color: #b0b0b2;
 }
 .members .contacts {
-   display: block;
+   display: flex;
+   justify-content: center;
    opacity: 0;
    transform: translateY(20px); /* Initially position it below */
-   transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+   transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth transition */
    z-index: 5;
    position: absolute;
    bottom: 0;
+   margin: auto;
+   width: 100%;
+   align-items: center;
+   gap: 30px;
+}
+.members .item .image {
+   background: linear-gradient(to bottom, #3246bc00, #192883);
+   z-index: 3;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.members .contacts a {
+   padding: 15px 15px 14px;
+   background: linear-gradient(to right, #ffffff30 30%, transparent 100%);
+   border-image-slice: 1;
+   background-color: transparent;
+   /* margin-bottom: 5%; */
+   transition: 0.5s;
+   border: 1px solid #75359a;
+   border-radius: 30px;
+   margin: 0;
+   cursor: pointer;
+   width: 30px;
+   aspect-ratio: 1;
+   transition: 0.2s;
+}
+.members .contacts a:hover {
+   transform: scale(1.2);
+}
+.members .contacts a img {
+   width: 100%;
+   object-fit: contain;
+   aspect-ratio: 1;
 }
 
 .members .item:hover .contacts {
    opacity: 1;
-   transform: translateY(-20px); /* Move it to its original position */
+   transform: translateY(-100px); /* Move it to its original position */
    display: flex;
 }

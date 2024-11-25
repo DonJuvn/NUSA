@@ -1,4 +1,5 @@
-import React from "react";const Menu = () => {
+import React from "react";
+const Menu = () => {
    return (
       <div id="menu">
          <div className="container">
@@ -18,7 +19,7 @@ import React from "react";const Menu = () => {
                   </a>
                   <a href="#services">Услуги</a>
                   <a href="#feedbacks">Отзывы</a>
-                  <a href="#employees">Сотрудники</a>
+                  <a href="#members">Сотрудники</a>
                   <a href="#contacts">Контакты</a>
                </div>
             </div>
