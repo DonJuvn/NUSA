@@ -20,7 +20,7 @@ const Menu = () => {
                   <a href="#services">Услуги</a>
                   <a href="#feedbacks">Отзывы</a>
                   <a href="#members">Сотрудники</a>
-                  <a href="#contacts">Контакты</a>
+                  <a href="#footer">Контакты</a>
                </div>
             </div>
          </div>

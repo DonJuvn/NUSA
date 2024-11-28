@@ -10,6 +10,7 @@ import Services from "./components/services";
 import Feedbacks from "./components/feedbacks";
 import Members from "./components/members";
 import Form from "./components/form";
+import Footer from "./components/footer";
 // import ShadowBox from "./components/shadow-box";
 // import MouseShadow from "./components/MouseShadow";
 
@@ -33,6 +34,7 @@ function App() {
          <Feedbacks feedbacks={feedbacks} />
          <Members />
          <Form />
+         <Footer />
          {/* <ShadowBox /> */}
       </div>
    );
