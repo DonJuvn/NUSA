@@ -9,6 +9,7 @@ import Cases from "./components/cases";
 import Services from "./components/services";
 import Feedbacks from "./components/feedbacks";
 import Members from "./components/members";
+import Form from "./components/form";
 // import ShadowBox from "./components/shadow-box";
 // import MouseShadow from "./components/MouseShadow";
 
@@ -31,6 +32,7 @@ function App() {
          <Services />
          <Feedbacks feedbacks={feedbacks} />
          <Members />
+         <Form />
          {/* <ShadowBox /> */}
       </div>
    );

@@ -551,3 +551,74 @@ p {
    transform: translateY(-100px); /* Move it to its original position */
    display: flex;
 }
+
+/* form */
+#form {
+   padding-top: 5%;
+   margin-top: 5%;
+}
+.form {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+#form .container {
+   width: 83.4%;
+}
+.form .text {
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+}
+.form .text h1 {
+   font-size: 36px;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   color: #fff;
+   margin: 0 0 30px;
+}
+.form .text p {
+   font-size: medium;
+   font-family: "Sen", sans-serif;
+   color: #8491a0;
+   margin: 0;
+}
+.form form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 100%;
+}
+.form .zayavki {
+   width: 40%;
+}
+
+form input,
+form textarea {
+   background-color: #1c1b22;
+   color: white;
+   border: none;
+   padding: 10px 0 10px 10px;
+   font-size: 16px;
+   width: 100%;
+}
+
+form textarea {
+   resize: none;
+   height: 100px;
+}
+
+form button {
+   background-color: #ffc107;
+   color: black;
+   border: none;
+   padding: 15px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+form button:hover {
+   background-color: #e6a700;
+}
