@@ -1,5 +1,4 @@
-import React from "react";
-const Menu = () => {
+import React from "react";const Menu = () => {
    return (
       <div id="menu">
          <div className="container">
@@ -17,10 +16,18 @@ const Menu = () => {
                   <a id="white" href="#cases">
                      Кейсы
                   </a>
-                  <a href="#services">Услуги</a>
-                  <a href="#feedbacks">Отзывы</a>
-                  <a href="#members">Сотрудники</a>
-                  <a href="#footer">Контакты</a>
+                  <a id="white" href="#services">
+                     Услуги
+                  </a>
+                  <a id="white" href="#feedbacks">
+                     Отзывы
+                  </a>
+                  <a id="white" href="#members">
+                     Сотрудники
+                  </a>
+                  <a id="white" href="#footer">
+                     Контакты
+                  </a>
                </div>
             </div>
          </div>

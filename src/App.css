@@ -385,6 +385,9 @@ p {
 }
 
 /* feedbacks */
+#feedbacks{
+   padding-top: 5%;
+}
 .orbit-container {
    position: relative;
    width: 500px;
