@@ -15,11 +15,36 @@ import Footer from "./components/footer";
 // import MouseShadow from "./components/MouseShadow";
 
 const feedbacks = [
-   { avatar: "img/avatar1.png", name: "Member 2" },
-   { avatar: "img/avatar2.png", name: "Member 1" },
-   { avatar: "img/avatar3.png", name: "Member 3" },
-   { avatar: "img/avatar4.png", name: "Member 4" },
-   { avatar: "img/avatar5.png", name: "Member 5" },
+   {
+      avatar: "img/avatar1.png",
+      feedback:
+         "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
+      name: "Member 2",
+   },
+   {
+      avatar: "img/avatar2.png",
+      feedback:
+         "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
+      name: "Member 1 kjnsfv ",
+   },
+   {
+      avatar: "img/avatar3.png",
+      feedback:
+         "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
+      name: "Member 3",
+   },
+   {
+      avatar: "img/avatar4.png",
+      feedback:
+         "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
+      name: "Member 4",
+   },
+   {
+      avatar: "img/avatar5.png",
+      feedback:
+         "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
+      name: "Member 5",
+   },
 ];
 
 function App() {
