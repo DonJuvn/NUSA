@@ -629,6 +629,12 @@ p {
    transform: translateY(-100px); /* Move it to its original position */
    display: flex;
 }
+#avatar:hover{
+   transform: scale(0.9);
+   padding: 5%;
+   border: 1px solid #fff;
+   width: 95%;
+}
 
 /* form */
 #form {
