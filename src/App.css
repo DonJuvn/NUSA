@@ -61,6 +61,7 @@ a {
    position: absolute;
    width: 100%;
    z-index: 1000;
+   padding-top: 1%;
 }
 #menu .container {
    width: 96%;
@@ -69,9 +70,12 @@ a {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   width: 100%;
    align-items: center;
+   width: 100%;
    margin-top: 0.5%;
+}
+.menu .logo img {
+   height: 70px; /* Adjust logo size */
 }
 .menu .navbar {
    display: flex;
@@ -88,7 +92,6 @@ a {
    transition: 0.3s;
    text-align: center;
    z-index: 1002;
-   /* border: 1px solid red; */
 }
 .menu .navbar a:hover {
    color: #e9e9e9;
@@ -104,6 +107,59 @@ a {
    background-color: #e9e9e9;
    padding: 8px 0;
 }
+.menu-toggle {
+   display: none;
+   font-size: 24px;
+   color: #e9e9e9;
+   background: none;
+   border: none;
+   cursor: pointer;
+   z-index: 1003;
+}
+.menu-toggle:hover {
+   color: #e9e9e9;
+}
+@media (max-width: 768px) {
+   .menu {
+     position: relative; /* Ensure logo and navbar respect relative positions */
+   }
+ 
+   .menu .logo {
+     position: relative;
+     z-index: 1002; /* Keep the logo on top */
+   }
+ 
+   .menu .navbar {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     top: 100%; /* Start below the logo */
+     left: 0;
+     width: 100%;
+     background-color: #000; /* Background for the dropdown */
+     gap: 10px;
+     padding: 0; /* Start with no padding */
+     max-height: 0; /* Collapse the navbar initially */
+     overflow: hidden; /* Hide overflowing content */
+     transition: max-height 0.5s ease, padding 0.5s ease;
+     z-index: 1001; /* Lower z-index so it appears under the logo */
+   }
+ 
+   .menu .navbar.open {
+      max-height: 300px;
+      padding-bottom: 20px; /* Add padding when open */
+     top: calc(100% + 10px); /* Leave some space below the logo */
+   }
+ 
+   .menu-toggle {
+     display: block;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     z-index: 1002; /* Keep toggle on top */
+   }
+ }
+ 
 
 /* About */
 #about {
@@ -453,7 +509,7 @@ p {
    /* padding: 5px; */
    border-radius: 50%; /* Ensures a circular shape */
    background: transparent; /* Default background */
-   transition:  0.3s; /* Smooth hover transition */
+   transition: 0.3s; /* Smooth hover transition */
 }
 
 .avatar img {
@@ -469,9 +525,12 @@ p {
 }
 
 .avatar:hover {
-   background: linear-gradient(to right, #F17E0C, #E95CE9); /* Gradient border effect on hover */
+   background: linear-gradient(
+      to right,
+      #f17e0c,
+      #e95ce9
+   ); /* Gradient border effect on hover */
 }
-
 
 /* Hover info */
 .avatar .hover-info {
@@ -497,7 +556,7 @@ p {
    font-family: "Chakra Petch", sans-serif;
    display: none;
 }
-.avatar:hover .hover-info{
+.avatar:hover .hover-info {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -505,7 +564,7 @@ p {
 
 .avatar .hover-info #feedback-name {
    position: relative;
-   padding-bottom: 5px; 
+   padding-bottom: 5px;
    width: fit-content;
 }
 .avatar .hover-info #feedback-name::after {
@@ -514,8 +573,8 @@ p {
    left: 0;
    bottom: 0;
    width: 100%;
-   height: 2px; 
-   background: linear-gradient(to right, #F17E0C, #E95CE9);
+   height: 2px;
+   background: linear-gradient(to right, #f17e0c, #e95ce9);
 }
 .avatar .hover-info #feedfack-f {
    font-weight: 400;
@@ -629,7 +688,7 @@ p {
    transform: translateY(-100px); /* Move it to its original position */
    display: flex;
 }
-#avatar:hover{
+#avatar:hover {
    transform: scale(0.9);
    padding: 5%;
    border: 1px solid #fff;
