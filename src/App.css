@@ -827,8 +827,9 @@ p {
       margin-top: 15%;
       width: max-content;
       flex-wrap: nowrap;
-      overflow-x: scroll;
+      overflow-x: auto;
       scrollbar-width: none;
+      -ms-overflow-style: none;
    }
    .members .item {
       width: 250px;
