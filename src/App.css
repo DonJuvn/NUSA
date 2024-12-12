@@ -1094,3 +1094,37 @@ form button:hover {
 .footer .help .item img {
    width: 24px;
 }
+
+@media screen and (max-width: 768px){
+   #footer {
+      height: auto;
+   }
+   #footer .footer {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      padding-bottom: 5%;
+      justify-content: start;
+   }
+   .footer .links {
+      width: 100%;
+      bottom: 0;
+      justify-content: space-around;
+      margin-bottom: 25px;
+   }   
+   .footer .quick-access,
+   .support,
+   .help {
+      width: 50%;
+      margin-bottom: 20px;
+   }
+   .help{
+      width: 100%;
+      margin-bottom: 0;
+   }
+   .footer p {
+      margin: 5px 0;
+   }
+   .footer .help .item img {
+      width: 24px;
+   }
+}
