@@ -390,8 +390,6 @@ a {
    }
 }
 
-
-
 /* cases */
 #cases {
    /* margin-top: 5%; */
@@ -678,7 +676,7 @@ p {
    visibility: visible;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
    #feedbacks {
       height: 75vh;
    }
@@ -706,8 +704,8 @@ p {
       height: 425px;
    }
    .avatar {
-      width: 50px; 
-      height: 50px; 
+      width: 50px;
+      height: 50px;
    }
    .avatar .hover-info {
       width: 70vw;
@@ -822,6 +820,45 @@ p {
    padding: 5%;
    border: 1px solid #fff;
    width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+   .members {
+      margin-top: 15%;
+      width: max-content;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      scrollbar-width: none;
+   }
+   .members .item {
+      width: 250px;
+      aspect-ratio: 0.75;
+   }
+   .members .item .text {
+      bottom: 30px;
+   }
+   .members .item .text #name {
+      font-size: 18px;
+   }
+   .members .item .text #post {
+      font-size: 14px;
+   }
+   .members .contacts {
+      gap: 10px;
+   }
+   .members .contacts a {
+      padding: 8px 8px 7px;
+      width: 20px;
+   }
+   .members .contacts a:hover {
+      transform: scale(1);
+   }
+   .members .item:hover .contacts {
+      transform: translateY(-200%); /* Move it to its original position */
+   }
+   #avatar:hover {
+      transform: scale(1);
+   }
 }
 
 /* form */
