@@ -644,7 +644,7 @@ p {
       rgba(255, 255, 255, 0) 100%
    );
    border-image-slice: 1; /* Ensures full use of the gradient */
-   width: 45vh;
+   width: 45vw;
    font-family: "Chakra Petch", sans-serif;
    display: none;
 }
@@ -676,6 +676,43 @@ p {
 .avatar:hover .hover-info {
    opacity: 1;
    visibility: visible;
+}
+
+@media screen and (max-width: 768px){
+   #feedbacks {
+      height: 75vh;
+   }
+   .orbit-container {
+      height: 80%;
+   }
+   .sun {
+      width: 125px;
+      height: 125px;
+   }
+   .orbit-1 {
+      width: 200px;
+      height: 200px;
+   }
+   .orbit-2 {
+      width: 275px;
+      height: 275px;
+   }
+   .orbit-3 {
+      width: 350px;
+      height: 350px;
+   }
+   .orbit-4 {
+      width: 425px;
+      height: 425px;
+   }
+   .avatar {
+      width: 50px; 
+      height: 50px; 
+   }
+   .avatar .hover-info {
+      width: 70vw;
+      margin: auto;
+   }
 }
 
 /* members */

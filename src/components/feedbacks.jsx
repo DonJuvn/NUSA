@@ -5,6 +5,7 @@ const Feedbacks = ({ feedbacks }) => {
 
    return (
       <div id="feedbacks">
+         <h1 id="title">Feedbacks</h1>
          <div className="orbit-container">
             {/* Sun in the center */}
             <div className="sun"></div>
