@@ -238,6 +238,45 @@ a {
    cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+   .about {
+      height: 100vh;
+   }
+   .about .welcome {
+      width: 100%;
+   }
+   .about .welcome #cta {
+      padding: 12px 15px;
+   }
+   .about .welcome #cta:hover {
+      transform: scale(1);
+   }
+   .about .welcome h1 {
+      font-size: 24px;
+      line-height: 32.25px;
+      width: 90%;
+      text-shadow: 10px 10px 16px rgba(255, 255, 255, 0.3);
+   }
+   .white-bg {
+      width: 100%;
+      text-align: center;
+      text-align: center;
+      left: 0;
+   }
+   #arrow-down {
+      border-radius: 50px;
+      padding: 20px;
+      transition: 0.3s;
+      margin-bottom: 17%;
+   }
+   #arrow-down img {
+      width: 30px;
+   }
+   #arrow-down:hover {
+      transform: scale(1);
+   }
+}
+
 /* stats */
 #counters {
    padding-top: 6%;
