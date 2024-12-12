@@ -933,6 +933,48 @@ form button:hover {
    background-color: #e6a700;
 }
 
+@media screen and (max-width: 768px) {
+   #form {
+      padding-top: 15%;
+      margin-top: 5%;
+   }
+   .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 50px;
+   }
+   #form .container {
+      width: 90%;
+   }
+   .form .text {
+      width: 100%;
+   }
+   .form .text h1 {
+      font-size: 24px;
+      margin: 0 0 10px;
+   }
+   .form form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+   }
+   form input,
+   form textarea {
+      padding: 5px;
+      width: 98%;
+      height: 40px;
+   }
+   .form .zayavki {
+      width: 100%;
+      z-index: 5;
+   }
+   form textarea {
+      height: 60px;
+   }
+}
+
 /* footer */
 #footer {
    position: relative;
