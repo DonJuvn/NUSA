@@ -4,6 +4,7 @@ html {
 body {
    background-color: #000;
    font-family: "Inter", sans-serif;
+   overflow-x: hidden;
    /* cursor: none; */
 }
 a {
@@ -587,6 +588,10 @@ p {
    width: 500px;
    height: 500px;
 }
+.orbit-5 {
+   width: 600px;
+   height: 600px;
+}
 
 .avatar {
    position: absolute;
@@ -692,20 +697,24 @@ p {
       height: 200px;
    }
    .orbit-2 {
-      width: 275px;
-      height: 275px;
+      width: 250px;
+      height: 250px;
    }
    .orbit-3 {
+      width: 300px;
+      height: 300px;
+   }
+   .orbit-4 {
       width: 350px;
       height: 350px;
    }
-   .orbit-4 {
-      width: 425px;
-      height: 425px;
+   .orbit-5 {
+      width: 400px;
+      height: 400px;
    }
    .avatar {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
    }
    .avatar .hover-info {
       width: 70vw;
@@ -825,15 +834,16 @@ p {
 @media screen and (max-width: 768px) {
    .members {
       margin-top: 15%;
-      width: max-content;
       flex-wrap: nowrap;
       overflow-x: auto;
       scrollbar-width: none;
+      overflow-y: hidden;
       -ms-overflow-style: none;
    }
    .members .item {
       width: 250px;
       aspect-ratio: 0.75;
+      flex-shrink: 0;
    }
    .members .item .text {
       bottom: 30px;
@@ -985,6 +995,7 @@ form button:hover {
    align-items: end;
    padding-bottom: 5%;
    margin-top: 10%;
+   overflow: hidden;
 }
 #footer .container {
    margin: 0 auto;
@@ -1096,7 +1107,7 @@ form button:hover {
    width: 24px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
    #footer {
       height: auto;
    }
@@ -1111,14 +1122,14 @@ form button:hover {
       bottom: 0;
       justify-content: space-around;
       margin-bottom: 25px;
-   }   
+   }
    .footer .quick-access,
    .support,
    .help {
       width: 50%;
       margin-bottom: 20px;
    }
-   .help{
+   .help {
       width: 100%;
       margin-bottom: 0;
    }
