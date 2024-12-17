@@ -5,6 +5,7 @@ body {
    background-color: #000;
    font-family: "Inter", sans-serif;
    overflow-x: hidden;
+   scrollbar-width: none;
    /* cursor: none; */
 }
 a {
@@ -927,10 +928,12 @@ p {
       overflow-x: auto;
       scrollbar-width: none;
       overflow-y: hidden;
+      justify-content: start;
    }
    .members .item {
       width: 250px;
       aspect-ratio: 0.75;
+      scrollbar-width: none;
       flex-shrink: 0;
    }
    .members .item .text {
