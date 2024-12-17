@@ -234,6 +234,7 @@ a {
    /* background-color: #fff; */
    background-color: transparent;
    height: 100%;
+   max-height: 100%;
    position: absolute;
    width: 45%;
    float: right;
@@ -242,6 +243,7 @@ a {
    align-items: center;
    text-align: center;
    right: 0;
+   overflow: hidden;
 }
 #arrow-down {
    position: absolute;
@@ -383,7 +385,7 @@ a {
 }
 @media screen and (max-width: 768px) {
    #counters {
-      height: 85vh;
+      height: auto;
    }
    .counters {
       justify-content: space-between;
@@ -415,6 +417,7 @@ a {
    #about-us {
       width: 80%;
       font-size: 22px;
+      margin-top: 25%;
    }
 }
 
@@ -517,7 +520,8 @@ a {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-around;
+   /* justify-content: space-around; */
+   justify-content: flex-start;
    width: 100%;
    gap: 1%;
 }
@@ -591,15 +595,17 @@ p {
    .first-group {
       flex-direction: column;
       gap: 0;
+      justify-content: center;
    }
    .services .subtitle {
       font-size: 22px;
       margin: 8% auto;
    }
    .services .first .item {
-      width: 90%;
+      width: 85%;
       padding: 15px 20px 15px;
-      margin-bottom: 5%;
+      margin-bottom: 0 auto 5%;
+      display: block;
       transition: 0.5s;
    }
    .services .first .item h4 {
@@ -921,7 +927,6 @@ p {
       overflow-x: auto;
       scrollbar-width: none;
       overflow-y: hidden;
-      -ms-overflow-style: none;
    }
    .members .item {
       width: 250px;

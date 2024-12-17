@@ -1,10 +1,13 @@
-import React from "react";export const feedbacks = [
+import React from "react";
+export const feedbacks = [
    {
       avatar: "img/avatar1.png",
       feedback:
          "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
       name: "Member 1",
+      // xOffset: 5,
       xOffset: 5,
+      // yOffset: -147,
       yOffset: -147,
    },
    {
@@ -12,7 +15,8 @@ import React from "react";export const feedbacks = [
       feedback:
          "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
       name: "Member 2 kjnsfv ",
-      xOffset: 66,
+      // xOffset: 66,
+      xOffset: -25,
       yOffset: -5,
    },
    {
@@ -20,24 +24,30 @@ import React from "react";export const feedbacks = [
       feedback:
          "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
       name: "Member 3",
-      xOffset: -365,
-      yOffset: -42,
+      // xOffset: -365,
+      xOffset: -265,
+      // yOffset: -42,
+      yOffset: -12,
    },
    {
       avatar: "img/avatar4.png",
       feedback:
          "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
       name: "Member 4",
-      xOffset: -280,
-      yOffset: 160,
+      // xOffset: -280,
+      xOffset: -200,
+      // yOffset: 160,
+      yOffset: 80,
    },
    {
       avatar: "img/avatar5.png",
       feedback:
          "The team was professional, responsive, and a pleasure to work with. We highly recommend VRNas for any VR needs.",
       name: "Member 5",
-      xOffset: -370,
-      yOffset: -235,
+      // xOffset: -370,
+      xOffset: -300,
+      // yOffset: -235,
+      yOffset: -100,
    },
 ];
 
